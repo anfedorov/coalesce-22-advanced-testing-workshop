@@ -1,24 +1,15 @@
-# 👑 Inherited Project Refactoring Workshop 👑
-Welcome to the Inherited Project Refactoring workshop of Coalesce 2022!
+# :microscope: Advanced Testing Workshop :microscope:
+Welcome to the Advanced Testing workshop of Coalesce 2022!
 
-## :mage: About this Project :cat:
-You've just started working at a new job and they've been using dbt to transform
-their data (YES!). However, once you've made it into their project, you realize
-that you can't make heads or tails of their data flows. Let's be honest - it's a
-messy project and you desperately want to form a plan for cleaning it up. 
-
-dbt's already got some great material out there regarding refactoring (if you want
-to start small, you can start with the [refactoring course](https://courses.getdbt.com/courses/refactoring-sql-for-modularity)).
-The road to get from where you are to where you need to be can be hard navigate
-unless you've traveled it numerous times, and this refactoring workshop is the perfect 
-start to getting that extra practice in!  
-
-Part of Christine and Lauren's day-to-day is taming those crazy projects - they've 
-created this workshop to give you some tips and tricks for wrangling that DAG.
+## :lab_coat: About this Project :test_tube:
+You've been using dbt for a while, and are comfortable with the built in tests. 
+Part of you wonders: "are there other tests I should/could be using?" or "what if I want to make my own tests?". 
+You've come to the right place! 
+In this workshop we'll be going through advanced testing within dbt, and how you can use it to improve the reliability of your project, and sleep better at night knowing that your code is clean.
 
 ## :white_check_mark: Prerequisites:  
 This workshop assumes that you're familiar with dbt. At a minimun you should know how to:
-- Generate documentation
+- Apply and run built-in tests
 - Run commands and compile code
 - Create branches
 
@@ -39,7 +30,7 @@ This workshop assumes that you're familiar with dbt. At a minimun you should kno
   2. *dbt*  
      Using dbt Cloud vs. dbt Core doesn't matter. You'll specifically want to know how to:
      - [install packages](https://docs.getdbt.com/docs/building-a-dbt-project/package-management)
-     - [generate and view documentation](https://docs.getdbt.com/docs/building-a-dbt-project/documentation#generating-project-documentation)
+     - [use built-in tests](https://docs.getdbt.com/docs/building-a-dbt-project/tests)
      - [use selection syntax](https://docs.getdbt.com/reference/node-selection/syntax)
      - [upgrade your dbt version](https://docs.getdbt.com/guides/migration/versions/upgrading-to-v1.3), if needed (This project uses v1.3)
 
@@ -68,7 +59,7 @@ This workshop assumes that you're familiar with dbt. At a minimun you should kno
 <details>
   <summary> Live participants </summary>
 
-1. Navigate to the `Coalesce 2022 Workshop - Refactoring dbt Cloud` account.
+1. Navigate to the `Coalesce 2022 Workshop - Advanced testing` account.
 2. Configure your development credentials:  
    1. Click on your user profile in the top left-hand corner and click `Profile Settings`
    2. Scroll to the "Credentials" section.
@@ -151,10 +142,6 @@ This workshop assumes that you're familiar with dbt. At a minimun you should kno
 
 &nbsp;
 ## :tada: You're ready to move on to the next stage! :tada:
-![](/_resources/images/workshop_start.gif)
-
-Whoa... whoa there! You can't just go slinging at the DAG like that. 
-[Here's a walkthrough](https://github.com/dbt-labs/coalesce-22-inherited-project-refactoring-workshop/wiki) to get you trained up!
 
 **Live participants:**  
 We're asking that you don't go hopping in to the walkthrough just yet! We'll be training together live! :purple_heart:  
