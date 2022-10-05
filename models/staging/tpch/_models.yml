@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: stg_tpch__nations
+  - name: stg_tpch__part_suppliers
+    columns:
+      - name: " part_id || '|' || supplier_id"
+        tests:
+          - unique
+      - name: available_qty
+        tests:
+          - not_null
+  - name: stg_tpch__parts
+    columns:
+      - name: name
+  - name: stg_tpch__regions
+  - name: stg_tpch__suppliers
+    columns:
+      - name: phone_number
+
+    
