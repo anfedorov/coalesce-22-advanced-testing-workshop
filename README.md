@@ -87,6 +87,7 @@ This workshop assumes that you're familiar with dbt. At a minimun you should kno
      ```bash
      $ dbt build
      ```
+     **Don't worry when you see an error with one of the models. Stop when you hit that error!**
 
 </details>
 
