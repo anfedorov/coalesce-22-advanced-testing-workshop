@@ -2,20 +2,43 @@ version: 2
 
 models:
   - name: stg_tpch__nations
+    columns:
+        - name: nation_id
+          tests:
+            - not_null
+            - unique
+
   - name: stg_tpch__part_suppliers
     columns:
       - name: " part_id || '|' || supplier_id"
         tests:
           - unique
+          - not_null
       - name: available_qty
         tests:
           - not_null
+
   - name: stg_tpch__parts
     columns:
+      - name: part_id
+        tests:
+          - not_null
+          - unique
       - name: name
+
   - name: stg_tpch__regions
+    columns:
+      - name: region_id
+        tests:
+          - not_null
+          - unique
+          
   - name: stg_tpch__suppliers
     columns:
+      - name: supplier_id
+        tests:
+          - not_null
+          - unique
       - name: phone_number
 
     
