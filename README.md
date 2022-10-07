@@ -87,7 +87,7 @@ This workshop assumes that you're familiar with dbt. At a minimun you should kno
      ```bash
      $ dbt build
      ```
-     **Don't worry when you see an error with one of the models. Stop when you hit that error!**
+     **Don't worry when you see an error on `stg_tpch__part_suppliers`. Stop when you hit that error!**
 
 </details>
 
@@ -138,6 +138,8 @@ This workshop assumes that you're familiar with dbt. At a minimun you should kno
    ```bash
    $ dbt build
    ```
+  **Don't worry when you see an error on `stg_tpch__part_suppliers`. When you hit this error you're ready to start the lesson!**
+  
 
 </details>
 
