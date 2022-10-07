@@ -69,14 +69,16 @@ This workshop assumes that you're familiar with dbt. At a minimun you should kno
   
      |||
      |-|-|
-     |**Dataset**| Set this to `dbt_` your first initial + last name. Example: `dbt_cberger` |
+     |**Dataset**| Set this to `dbt_` your first initial + last name. Example: `dbt_bregenold` |
      |**Target Name**| Set this to `dev` |
   
    6. Hit `Save`
 
-3. Run `dbt deps` to install dependencies.
+3. Create a new branch named first initial + last name_coalesce_22. Example: `bregenold_coalesce_22`
 
-4. Confirm your setup:  
+4. Run `dbt deps` to install dependencies.
+
+5. Confirm your setup:  
    1. Navigate to the IDE by clicking on the `Develop` tab in the upper right-hand corner
    2. Try running the following commands:
      ```bash
@@ -105,7 +107,7 @@ This workshop assumes that you're familiar with dbt. At a minimun you should kno
      - You'll need to load the data to your selected warehouse using another method. 
      - You'll need to make changes to the repository code you forked so the syntax works with your warehouse.
 
-4. Load the data  
+3. Load the data  
    
    Download the files from the [`_resources/tpch_dataset`](/_resources/tpch_dataset/). If you are working locally, the files will be within the 
    repository location on your computer.
@@ -126,9 +128,9 @@ This workshop assumes that you're familiar with dbt. At a minimun you should kno
    - If you didn't setup BigQuery, load the data from the [`_resources/tpch_dataset`](/_resources/tpch_dataset/) into your warehouse.  
      You will need to update the `_sources.yml` file with the location of your data.
 
-5. Run `dbt deps` to install dependencies.
+4. Run `dbt deps` to install dependencies.
    
-6. Confirm your setup:  
+5. Confirm your setup:  
    Try running the following commands:
    ```bash
    $ dbt run
