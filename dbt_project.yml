@@ -20,3 +20,14 @@ models:
   coalesce_22_inherited_project_refactoring_workshop:
     marts:
       materialized: table
+
+  - name: stg_tpch__part_suppliers
+    columns:
+      - name: available_qty
+        tests:
+          - not_null:
+              config:
+                severity: error
+                error_if: ">35"
+                warn_if: ">0"
+                where: "supply_cost > 0"
